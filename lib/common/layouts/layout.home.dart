@@ -1,5 +1,4 @@
 import 'package:app/common/widgets/widget.bottom_bar.dart';
-import 'package:app/core/core.colors.dart';
 import 'package:flutter/material.dart';
 
 class HomeLayout extends StatelessWidget {
@@ -21,7 +20,7 @@ class HomeLayout extends StatelessWidget {
         child: child,
       ),
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(activeTab: activePage),
     );
   }
 }

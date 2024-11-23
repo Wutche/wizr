@@ -10,7 +10,14 @@ double _getFontSizesFromEnums(ParagraphSizes size){
   if(size == ParagraphSizes.xs) return 10;
   if(size == ParagraphSizes.sm) return 12;
   if(size == ParagraphSizes.md) return 14;
-  if(size == ParagraphSizes.base) return 16;
+  if(size == ParagraphSizes.lg) return 16;
+  if(size == ParagraphSizes.xl) return 18;
+if(size == ParagraphSizes.x2l) return 20;
+  if(size == ParagraphSizes.x3l) return 22;
+  if(size == ParagraphSizes.x4l) return 24;
+  if(size == ParagraphSizes.x5l) return 26;
+  if(size == ParagraphSizes.x6l) return 28;
+if(size == ParagraphSizes.x7l) return 30;
   return 14;
 }
 FontWeight _getFontWeightFromEnums(ParagraphWeight weight){

@@ -8,6 +8,13 @@ enum ParagraphSizes{
   lg,
   xl,
   xxl,
+  x3l,
+  x2l,
+  x4l,
+  x5l,
+  x6l,
+  x7l,
+  x8l,
 }
 
 enum ParagraphWeight{

@@ -16,18 +16,16 @@ class _OutlinedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child:GestureDetector(
+    return GestureDetector(
         onTap: action,
         child:  Container(
-          height: 42,
+          height: 48,
           decoration: BoxDecoration(
               border: Border.all(
                   color: color,
-                  width: 1
+                  width: 0.34
               ),
-              borderRadius: BorderRadius.circular(8)
+              borderRadius: BorderRadius.circular(100)
           ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +34,7 @@ class _OutlinedButton extends StatelessWidget {
             ],
           ),
         ),
-      ),);
+      );
   }
 }
 
@@ -55,15 +53,13 @@ class _SolidButton extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return Expanded(
-      flex: 1,
-      child: GestureDetector(
+      return GestureDetector(
         onTap: action,
         child: Container(
-          height: 42,
+          height: 48,
           decoration: BoxDecoration(
               color: color,
-              borderRadius: BorderRadius.circular(8)
+              borderRadius: BorderRadius.circular(100)
           ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -72,7 +68,7 @@ class _SolidButton extends StatelessWidget{
             ],
           ),
         ),
-      ),);
+      );
   }
 
 }
@@ -95,8 +91,8 @@ class AppButton extends StatelessWidget {
     super.key,
     this.outlined = false,
     required this.action,
+    required this.color,
     required this.child,
-    required this.color
   });
 
   @override

@@ -7,9 +7,9 @@ List<Map<String, dynamic>> bottomLinks = [
     "activeIconUrl":"assets/icons/home-active.png"
   },
   {
-    "url":"/orders",
-    "title":"Orders" ,
-    "key":"orders",
+    "url":"/attractions",
+    "title":"Attractions" ,
+    "key":"attractions",
     "iconUrl":"assets/icons/orders.png",
     "activeIconUrl":"assets/icons/orders-active.png"
   },
